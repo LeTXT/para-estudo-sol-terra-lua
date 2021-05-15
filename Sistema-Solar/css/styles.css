@@ -1,0 +1,73 @@
+body, html {
+    height: 100vh;
+    width: 100vw;
+    margin: 150px;
+    background: black;
+    
+    display: grid;
+}
+
+.sol {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    box-shadow: 10px 10px 10px 10px yellow;
+    background: yellow;
+    animation: 10s transicao infinite;
+    
+}
+section {
+    margin: 500px;
+}
+.espaco {
+    margin: 100px;
+}
+.terra {
+    width: 10%;
+    height: 10%;
+    border-radius: 50px;
+    background: blue;
+    animation: 1s transicao infinite;
+    position: absolute;
+    margin: 0;
+    top: 0;
+}
+.lua {
+   background: white;
+   width: 10%;
+   height: 10%;
+   margin: 150%;
+
+}
+
+@keyframes transicao {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(90deg);
+
+        }
+       50% {
+           transform: rotate(180deg)
+       } 
+        
+       75% {
+         transform: rotate(270deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+        
+    }
+
+.borda {
+    border: 1px dotted rgb(255, 255, 255);
+    border-radius: 250px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+}
